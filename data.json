@@ -1,0 +1,44 @@
+{
+    "0-10": [],
+    "10-20": [],
+    "20-30": [],
+    "30-40": [],
+    "40-50": [],
+    "50-60": [],
+    "60-70": [],
+    "70-80": [
+        {
+            "Hub": "Downtown",
+            "Vehicle Type": "ElectricScooter",
+            "Vehicle ID": "201",
+            "Model": "GT650",
+            "Battery Percentage": 76,
+            "Maintananence Status": "On Trip",
+            "Rental Price": 2000,
+            "Seating Capacity / Maximum Speed Limit": "80"
+        },
+        {
+            "Hub": "Airport",
+            "Vehicle Type": "ElectricCar",
+            "Vehicle ID": "102",
+            "Model": "BMW",
+            "Battery Percentage": 77,
+            "Maintananence Status": "Under Maintanence",
+            "Rental Price": 70000,
+            "Seating Capacity / Maximum Speed Limit": "5"
+        }
+    ],
+    "80-90": [
+        {
+            "Hub": "Downtown",
+            "Vehicle Type": "ElectricCar",
+            "Vehicle ID": "101",
+            "Model": "Tesla",
+            "Battery Percentage": 89,
+            "Maintananence Status": "Available",
+            "Rental Price": 4000,
+            "Seating Capacity / Maximum Speed Limit": "5"
+        }
+    ],
+    "90-100": []
+}
