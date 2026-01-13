@@ -1,0 +1,4 @@
+Hub,Vehicle Type,Vehicle ID,Model,Battery Percentage,Maintananence Status,Rental Price,Seating Capacity / Maximum Speed Limit
+Downtown,ElectricCar,101,Tesla,89,Available,4000,5
+Downtown,ElectricScooter,201,GT650,76,On Trip,2000,80
+Airport,ElectricCar,102,BMW,77,Under Maintanence,70000,5
