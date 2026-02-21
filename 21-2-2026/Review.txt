@@ -1,0 +1,45 @@
+Task : To check the block allocation for small files and large files 
+
+DataSet : http://kaggle.com/datasets/likithagedipudi/digital-learning-analytics
+
+Step 1:Start Hadoop Deamons 
+  Command : start-dfs.sh
+            start-yarn.sh
+
+Step 2: Check Hadoop Streaming
+ Command : jps
+
+Step 3: To check the files in input directory 
+ Command : hdfs dfs -ls /review/input
+
+Step 4: To check the size of the files
+  Command : ls -lh Review/digital_learning_analytics_100k.csv
+            ls -lh Review/digital.csv
+
+Step 5 : Create a bash file to check the Block allocation of Small files
+
+nano Review/small_file.sh
+
+#!/bin/bash
+#VARIABLES
+HDFS_FILE=/review/input/digital_learning_analytics_100k.csv
+echo "Lisiting the files in directory"
+hdfs dfs -ls /review/input
+echo "Blocks in input file"
+hdfs fsck $HDFS_FILE -files -blocks -locations
+
+
+Step 6 : Create a bash file to check the Block allocation of large files
+
+nano Review/large_file.h
+
+#!/bin/bash
+#VARIABLES
+HDFS_FILE=/review/input/digital.csv._COPYING_
+echo "Lisiting the files in directory"
+hdfs dfs -ls /review/input
+echo "Blocks in input file"
+hdfs fsck $HDFS_FILE -files -blocks -locations
+
+
+
